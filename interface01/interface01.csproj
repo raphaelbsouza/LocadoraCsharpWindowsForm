@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C84C20ED-DF63-407A-839F-4DA495FFA3BD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>interface01</RootNamespace>
+    <AssemblyName>interface01</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="MySql.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\Cadastrar.cs" />
+    <Compile Include="Cadastros\Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadClientes.cs" />
+    <Compile Include="Cadastros\CadClientes.Designer.cs">
+      <DependentUpon>CadClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadFuncionarios.cs" />
+    <Compile Include="Cadastros\CadFuncionarios.Designer.cs">
+      <DependentUpon>CadFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadLocacao.cs" />
+    <Compile Include="Cadastros\CadLocacao.Designer.cs">
+      <DependentUpon>CadLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Cadcarros.cs" />
+    <Compile Include="Cadastros\Cadcarros.Designer.cs">
+      <DependentUpon>Cadcarros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConClientes.cs" />
+    <Compile Include="Consultas\ConClientes.Designer.cs">
+      <DependentUpon>ConClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConFuncionarios.cs" />
+    <Compile Include="Consultas\ConFuncionarios.Designer.cs">
+      <DependentUpon>ConFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConLocacao.cs" />
+    <Compile Include="Consultas\ConLocacao.Designer.cs">
+      <DependentUpon>ConLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConCarros.cs" />
+    <Compile Include="Consultas\ConCarros.Designer.cs">
+      <DependentUpon>ConCarros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Consultar.cs" />
+    <Compile Include="Consultas\Consultar.Designer.cs">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletar\DELcarro.cs" />
+    <Compile Include="Deletar\DELcarro.Designer.cs">
+      <DependentUpon>DELcarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletar\DELcliente.cs" />
+    <Compile Include="Deletar\DELcliente.Designer.cs">
+      <DependentUpon>DELcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletar\Deletar.cs" />
+    <Compile Include="Deletar\Deletar.Designer.cs">
+      <DependentUpon>Deletar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletar\DELfuncionario.cs" />
+    <Compile Include="Deletar\DELfuncionario.Designer.cs">
+      <DependentUpon>DELfuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletar\DELlocacao.cs" />
+    <Compile Include="Deletar\DELlocacao.Designer.cs">
+      <DependentUpon>DELlocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar\EdCarro.cs" />
+    <Compile Include="Editar\EdCarro.Designer.cs">
+      <DependentUpon>EdCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar\EdCliente.cs" />
+    <Compile Include="Editar\EdCliente.Designer.cs">
+      <DependentUpon>EdCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar\EdFuncionario.cs" />
+    <Compile Include="Editar\EdFuncionario.Designer.cs">
+      <DependentUpon>EdFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar\Editar.cs" />
+    <Compile Include="Editar\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar\EdLocacao.cs" />
+    <Compile Include="Editar\EdLocacao.Designer.cs">
+      <DependentUpon>EdLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mysqlconnection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\CadClientes.resx">
+      <DependentUpon>CadClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\CadFuncionarios.resx">
+      <DependentUpon>CadFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\CadLocacao.resx">
+      <DependentUpon>CadLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Cadcarros.resx">
+      <DependentUpon>Cadcarros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConClientes.resx">
+      <DependentUpon>ConClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConFuncionarios.resx">
+      <DependentUpon>ConFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConLocacao.resx">
+      <DependentUpon>ConLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConCarros.resx">
+      <DependentUpon>ConCarros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Consultar.resx">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletar\DELcarro.resx">
+      <DependentUpon>DELcarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletar\DELcliente.resx">
+      <DependentUpon>DELcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletar\Deletar.resx">
+      <DependentUpon>Deletar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletar\DELfuncionario.resx">
+      <DependentUpon>DELfuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletar\DELlocacao.resx">
+      <DependentUpon>DELlocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cadastros" />
+    <Folder Include="Consultas" />
+    <Folder Include="Editar" />
+    <Folder Include="Deletar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
